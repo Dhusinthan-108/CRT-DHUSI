@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Example</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;       
+    }
+
+    .ball {
+      width: 40px;
+      height: 500px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: relative;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        top: 0;
+      }
+      50% {
+        top: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>
